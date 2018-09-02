@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+
+<!-- 
+Start of global snippet: Please do not remove
+Place this snippet between the <head> and </head> tags on every page of your site.
+-->
+<!-- Global site tag (gtag.js) - Google Marketing Platform -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=DC-4380776"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'DC-4380776');
+</script> -->
+<!-- End of global snippet: Please do not remove -->
+
+</head>
+<body>
+
+<h1>Tag Test</h1>
+<p>Update 3</p>
+<script>
+    window.dataLayer=[{transactionTotal:100,transactionId:2}]
+</script>
+
+<!--
+Event snippet for conversion-modestosymph on http://modestosymphony.org/: Please do not remove.
+Place this snippet on pages with events you’re tracking. 
+Creation date: 08/21/2018
+-->
+<!-- <script>
+
+    var revenue = dataLayer[0].transactionTotal;
+    var orderid= dataLayer[0].transactionId;
+
+    gtag('event', 'purchase', {
+        'allow_custom_scripts': true,
+        'value': '[revenue]',
+        'transaction_id': '[orderid]',
+        'send_to': 'DC-4380776/conve0/conve0+transactions'
+    });
+</script>
+<noscript>
+    <img src="https://ad.doubleclick.net/ddm/activity/src=4380776;type=conve0;cat=conve0;qty=1;cost=[revenue];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;ord=[orderid]?" width="1" height="1" alt=""/>
+</noscript> -->
+<!-- End of event snippet: Please do not remove -->
+
+<script>
+    console.log('revenue => '+revenue)
+    console.log('orderid => '+orderid)
+</script>
+
+<!--
+Start of Floodlight Tag: Please do not remove
+Activity name of this tag: conversion-modestosymph
+URL of the webpage where the tag is expected to be placed: http://modestosymphony.org/
+This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
+Creation Date: 08/21/2018
+-->
+
+<!-- <iframe src="https://4380776.fls.doubleclick.net/activityi;src=4380776;type=conve0;cat=conve0;qty=1;cost=[revenue];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;ord=[orderid]?" width="1" height="1" frameborder="0" style="display:none"></iframe> -->
+
+<iframe id="mogo_conversion" width="1" height="1" frameborder="0" style="display:none"></iframe>
+
+<script>
+    var revenue = dataLayer[0].transactionTotal;
+    var orderid = dataLayer[0].transactionId;
+    document.getElementById("mogo_conversion").src="https://4380776.fls.doubleclick.net/activityi;src=4380776;type=conve0;cat=conve0;qty=1;cost="+revenue+";dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;ord="+orderid+"?"
+</script>
+<!-- End of Floodlight Tag: Please do not remove -->
+
+
+
+</body>
+</html>

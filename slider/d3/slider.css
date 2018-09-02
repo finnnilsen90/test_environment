@@ -1,0 +1,77 @@
+svg {
+    font: 10px sans-serif;
+  }
+  
+  .y.axis path {
+    display: none;
+  }
+  
+  .y.axis line {
+    stroke: #fff;
+    stroke-opacity: .2;
+    shape-rendering: crispEdges;
+  }
+  
+  .y.axis .zero line {
+    stroke: #000;
+    stroke-opacity: 1;
+  }
+  
+  .title {
+    font: 300 78px Helvetica Neue;
+    fill: #666;
+  }
+  
+  .birthyear,
+  .age {
+    text-anchor: middle;
+  }
+  
+  .birthyear {
+    fill: #fff;
+  }
+  
+  rect {
+    fill-opacity: .6;
+    fill: #e377c2;
+  }
+  
+  rect:first-child {
+    fill: #1f77b4;
+  }
+
+
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: rgb(235, 197, 31);
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: rgb(235, 197, 31);
+    cursor: pointer;
+}
