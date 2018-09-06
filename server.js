@@ -12,10 +12,11 @@ app.set('port', port);
 
 app.use(morgan('dev'));
 
-app.use(express.static(path.join(__dirname, 'slider/d3')));
+app.use(express.static(path.join(__dirname, '/slider')));
+app.use(express.static(path.join(__dirname, '/slider/d3_tutorial')));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname,'/slider/d3/index.html'));
+    res.sendFile(path.join(__dirname,'/slider/d3_tutorial/index.html'));
 });
 
 // route for handling 404 requests(unavailable routes
