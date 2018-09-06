@@ -6,3 +6,13 @@
   margin: 1px;
   color: white;
 }
+
+h3 {
+  margin:0 0 20px 0;
+}
+
+.cash {
+  position: relative;
+  bottom:39px;
+  left:122px;
+}
