@@ -1,4 +1,46 @@
-var index = [.00030, .00080, .0009, .0009, .00090, .00080]
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<style>
+.chart div {
+  font: 10px sans-serif;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
+
+h3 {
+  margin:0 0 20px 0;
+}
+
+.cash {
+  position: relative;
+  bottom:39px;
+  left:122px;
+}
+</style>
+<body>
+
+<input type="range" min="1" max="100" value="1" class="slider" id="myRange">
+
+<div class'parent_cash'>
+
+    <h3>Weekly Spend:</h3><div class='cash'></div>
+
+</div>
+
+<div class='parent'>
+
+    <h4>Revenue per Week</h4>
+    <div class='chart'></div>
+
+</div>
+
+<script src="../d3.v3.min.js"></script>
+<script>
+    var index = [.00030, .00080, .0009, .0009, .00090, .00080]
 this.input = {'cash': 1250, 'cr': .010, 'ctr': .008, 'cpm': 6, 'avg_ord': 130};
 this.cash;
 
@@ -59,3 +101,7 @@ slider.addEventListener('mouseup', (c) => {
     graph(index,slider_val);
     chng_cash()
  });
+</script>
+
+
+</body>
